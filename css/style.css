@@ -208,6 +208,9 @@ section {
   .container_header nav {
     width: 70%;
   }
+  .home .container .home_info h2 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 390px) {
   .container_header nav .icons h2 {
@@ -223,5 +226,8 @@ section {
   }
   .container_header nav {
     width: 60%;
+  }
+  .home .container .home_info h2 {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
