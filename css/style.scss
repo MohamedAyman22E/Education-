@@ -44,9 +44,9 @@ body{
 }
 .menu{
     font-size: 25px;
-    position: absolute;
-    top: 20px;
-    right: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
     background-color: $green;
     width: 40px;
     height: 40px;
@@ -238,6 +238,35 @@ i{
     }
   
 }
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 5% 50px 5% ;
+.about_img{
+    width: 50%;
+}
+.about_info{
+    width: 50%;
+    span{
+        color: $green;
+        font-size: 25px;
+    }
+    h2{
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    p{
+        color: $light-color;
+        margin-bottom: 20px;
+    }
+    .btn{
+        @include btn($green)
+    }
+}
+    
+}
 
 @media (max-width:1300px) {
     section{
@@ -263,6 +292,26 @@ i{
 .category .heading{
         margin-top: 50px;
        }
+
+
+
+
+
+
+       .about .container{
+        flex-direction: column;
+    .about_img{
+        width: 100%;
+    }
+    .about_info{
+        width: 100%;
+        
+    }
+}
+
+
+
+
 }
 @media (max-width:950px){
     .container_header{
@@ -386,5 +435,9 @@ section{
     }
     .home .container .home_info h2 {
         font-size: 25px;
+    }
+    .about .container .about_info h2{
+        font-size: 20px;
+
     }
 }

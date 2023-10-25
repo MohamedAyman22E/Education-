@@ -8,9 +8,7 @@
   scroll-behavior: smooth;
   list-style: none;
   font-family: "Montserrat", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 body {
@@ -20,9 +18,9 @@ body {
 
 .menu {
   font-size: 25px;
-  position: absolute;
-  top: 20px;
-  right: 50px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
   background-color: #44bb6a;
   width: 40px;
   height: 40px;
@@ -222,6 +220,46 @@ section {
   color: #777;
 }
 
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px 5% 50px 5%;
+}
+.about .container .about_img {
+  width: 50%;
+}
+.about .container .about_info {
+  width: 50%;
+}
+.about .container .about_info span {
+  color: #44bb6a;
+  font-size: 25px;
+}
+.about .container .about_info h2 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+.about .container .about_info p {
+  color: #777;
+  margin-bottom: 20px;
+}
+.about .container .about_info .btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  background-color: #263238;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.about .container .about_info .btn:hover {
+  background-color: #44bb6a;
+}
+
 @media (max-width: 1300px) {
   section {
     padding: 3rem 2% 3rem 25%;
@@ -245,6 +283,15 @@ section {
   }
   .category .heading {
     margin-top: 50px;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container .about_img {
+    width: 100%;
+  }
+  .about .container .about_info {
+    width: 100%;
   }
 }
 @media (max-width: 950px) {
@@ -332,5 +379,8 @@ section {
   }
   .home .container .home_info h2 {
     font-size: 25px;
+  }
+  .about .container .about_info h2 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
