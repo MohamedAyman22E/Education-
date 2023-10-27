@@ -183,6 +183,7 @@ section {
 }
 .category .containerCategory .heading span {
   color: #44bb6a;
+  text-transform: uppercase;
   font-size: 20px;
 }
 .category .containerCategory .heading h2 {
@@ -260,6 +261,343 @@ section {
   background-color: #44bb6a;
 }
 
+.course .container {
+  text-align: center;
+}
+.course .container .heading span {
+  text-transform: uppercase;
+  color: #44bb6a;
+}
+.course .container .heading h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.course .container .allBoxCourse {
+  padding: 2rem 4% 3rem 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, auto));
+  align-items: center;
+  gap: 20px;
+}
+.course .container .allBoxCourse .box {
+  border: 2px solid #000;
+  position: relative;
+  padding: 20px;
+}
+.course .container .allBoxCourse .box h3 {
+  font-weight: 500;
+}
+.course .container .allBoxCourse .box .info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  background-color: #44bb6a;
+  color: #fff;
+  transition: 0.3s;
+}
+.course .container .allBoxCourse .box .info .text {
+  position: absolute;
+  padding: 0 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.course .container .allBoxCourse .box .info .text .icon {
+  color: #ff0;
+}
+.course .container .allBoxCourse .box .info .text h3 {
+  margin: 20px 0;
+}
+.course .container .allBoxCourse .box .info .text p {
+  margin-bottom: 20px;
+}
+.course .container .allBoxCourse .box .info .text .btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  background-color: #263238;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.course .container .allBoxCourse .box .info .text .btn:hover {
+  background-color: #ff0;
+}
+.course .container .allBoxCourse .box .info .text .btn:hover {
+  color: #263238;
+}
+.course .container .allBoxCourse .box:hover .info {
+  opacity: 1;
+}
+.course .container .allBoxCourse .box:hover {
+  border-color: #44bb6a;
+}
+
+.price {
+  background-color: #f6f6f6;
+}
+.price .container {
+  text-align: center;
+}
+.price .container .allBoxPrice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 20px;
+  padding: 2rem 4% 3rem 4%;
+}
+.price .container .allBoxPrice .box {
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.price .container .allBoxPrice .box .img img {
+  width: 60%;
+}
+.price .container .allBoxPrice .box h5 span {
+  font-size: 40px;
+  font-weight: 400;
+}
+.price .container .allBoxPrice .box .icons {
+  text-align: left;
+  margin: 30px 0 50px 0;
+}
+.price .container .allBoxPrice .box .icons li {
+  margin: 20px 0;
+}
+.price .container .allBoxPrice .box .icons li i {
+  color: #44bb6a;
+  font-size: 20px;
+}
+.price .container .allBoxPrice .box .icons li .fa-xmark {
+  color: red;
+}
+.price .container .allBoxPrice .box .btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  background-color: #263238;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.price .container .allBoxPrice .box .btn:hover {
+  background-color: #44bb6a;
+}
+
+.contact .container .heading {
+  text-align: center;
+}
+.contact .container .heading span {
+  color: #44bb6a;
+}
+.contact .container .heading h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.contact .container .allContactBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem 4% 3rem 4%;
+}
+.contact .container .allContactBox .contactInfo {
+  width: 30%;
+}
+.contact .container .allContactBox .contactInfo ul li {
+  display: flex;
+  gap: 5px;
+}
+.contact .container .allContactBox .contactInfo ul li i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #44bb6a;
+  text-align: center;
+  border-radius: 50%;
+}
+.contact .container .allContactBox .contactInfo ul li .text h2 {
+  font-weight: 400;
+}
+.contact .container .allContactBox .contactInfo ul li .text span {
+  color: #777;
+}
+.contact .container .allContactBox .contactInfo .icon {
+  display: flex;
+  margin-top: 20px;
+}
+.contact .container .allContactBox .contactInfo .icon li {
+  margin: 0 7px;
+  padding: 10px 12px;
+  background-color: #263238;
+  font-size: 20px;
+  border-radius: 2px;
+  color: #fff;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  border: 2px solid #263238;
+}
+.contact .container .allContactBox .contactInfo .icon li:hover {
+  background-color: #fff;
+  color: #263238;
+}
+.contact .container .allContactBox .contactForm {
+  width: 70%;
+}
+.contact .container .allContactBox .contactForm form .small {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.contact .container .allContactBox .contactForm form .small input {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #f6f6f6;
+  border: none;
+  outline: none;
+}
+.contact .container .allContactBox .contactForm form textarea {
+  width: 100%;
+  resize: none;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #f6f6f6;
+  border: none;
+  outline: none;
+}
+.contact .container .allContactBox .contactForm form button {
+  padding: 8px 20px;
+  background-color: transparent;
+  background-color: #263238;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.contact .container .allContactBox .contactForm form button:hover {
+  background-color: #44bb6a;
+}
+
+.review {
+  background-color: #f6f6f6;
+}
+.review .container {
+  text-align: center;
+}
+.review .container .heading span {
+  text-transform: uppercase;
+  color: #44bb6a;
+}
+.review .container .heading h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.review .container .allBoxReview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 20px;
+  padding: 2rem 4% 3rem 4%;
+}
+.review .container .allBoxReview .box {
+  border: 2px solid #263238;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.review .container .allBoxReview .box img {
+  border-radius: 50%;
+  width: 30%;
+}
+.review .container .allBoxReview .box h2 {
+  font-weight: 500;
+  margin: 20px 0;
+}
+.review .container .allBoxReview .box .icon {
+  margin-top: 20px;
+}
+.review .container .allBoxReview .box .icon i {
+  color: #44bb6a;
+}
+
+.blog .container .heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.blog .container .heading span {
+  color: #44bb6a;
+  text-transform: uppercase;
+}
+.blog .container .heading h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.blog .container .allBoxBlog {
+  padding: 2rem 4% 3rem 4%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 20px;
+}
+.blog .container .allBoxBlog .box {
+  border: 2px solid #263238;
+  padding: 20px;
+  text-align: center;
+}
+.blog .container .allBoxBlog .box img {
+  width: 80%;
+  transition: 0.3s;
+}
+.blog .container .allBoxBlog .box img:hover {
+  transform: translateY(-10px);
+}
+.blog .container .allBoxBlog .box h3 {
+  font-weight: 500;
+  transition: 0.2s;
+}
+.blog .container .allBoxBlog .box h3:hover {
+  color: #44bb6a;
+}
+.blog .container .allBoxBlog .box p {
+  color: #777;
+  margin: 20px 0;
+}
+.blog .container .allBoxBlog .box .calender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.blog .container .allBoxBlog .box .calender h2 {
+  font-size: 15px;
+  transition: 0.3s;
+}
+.blog .container .allBoxBlog .box .calender h2 i {
+  color: #44bb6a;
+  margin-right: 10px;
+}
+.blog .container .allBoxBlog .box .calender h2:hover {
+  color: #44bb6a;
+}
+
 @media (max-width: 1300px) {
   section {
     padding: 3rem 2% 3rem 25%;
@@ -293,6 +631,9 @@ section {
   .about .container .about_info {
     width: 100%;
   }
+  .contact .container .allContactBox {
+    gap: 70px;
+  }
 }
 @media (max-width: 950px) {
   .container_header {
@@ -320,6 +661,17 @@ section {
   }
   section {
     padding: 2rem 8% 3rem 8%;
+  }
+}
+@media (max-width: 770px) {
+  .contact .container .allContactBox {
+    flex-direction: column;
+  }
+  .contact .container .allContactBox .contactInfo {
+    width: 100%;
+  }
+  .contact .container .allContactBox .contactForm {
+    width: 100%;
   }
 }
 @media (max-width: 670px) {
@@ -382,5 +734,8 @@ section {
   }
   .about .container .about_info h2 {
     font-size: 20px;
+  }
+  .blog .container .allBoxBlog .box .calender h2 {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
