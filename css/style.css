@@ -68,17 +68,17 @@ section {
 .container_header nav .navList li {
   margin: 20px 0;
 }
+.container_header nav .navList li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
 .container_header nav .navList li a i {
   color: #ff0;
   margin-right: 10px;
   transition: 0.3s;
 }
-.container_header nav .navList li span {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-}
-.container_header nav .navList li:hover i {
+.container_header nav .navList li a.active i {
   margin-right: 20px;
 }
 .container_header nav .icons .navIcon {
@@ -338,48 +338,48 @@ section {
   border-color: #44bb6a;
 }
 
-.price {
+.pricing {
   background-color: #f6f6f6;
 }
-.price .container {
+.pricing .container {
   text-align: center;
 }
-.price .container .allBoxPrice {
+.pricing .container .allBoxPrice {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   align-items: center;
   gap: 20px;
   padding: 2rem 4% 3rem 4%;
 }
-.price .container .allBoxPrice .box {
+.pricing .container .allBoxPrice .box {
   border: 2px solid #000;
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
   position: relative;
 }
-.price .container .allBoxPrice .box .img img {
+.pricing .container .allBoxPrice .box .img img {
   width: 60%;
 }
-.price .container .allBoxPrice .box h5 span {
+.pricing .container .allBoxPrice .box h5 span {
   font-size: 40px;
   font-weight: 400;
 }
-.price .container .allBoxPrice .box .icons {
+.pricing .container .allBoxPrice .box .icons {
   text-align: left;
   margin: 30px 0 50px 0;
 }
-.price .container .allBoxPrice .box .icons li {
+.pricing .container .allBoxPrice .box .icons li {
   margin: 20px 0;
 }
-.price .container .allBoxPrice .box .icons li i {
+.pricing .container .allBoxPrice .box .icons li i {
   color: #44bb6a;
   font-size: 20px;
 }
-.price .container .allBoxPrice .box .icons li .fa-xmark {
+.pricing .container .allBoxPrice .box .icons li .fa-xmark {
   color: red;
 }
-.price .container .allBoxPrice .box .btn {
+.pricing .container .allBoxPrice .box .btn {
   padding: 8px 20px;
   background-color: transparent;
   background-color: #263238;
@@ -394,7 +394,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
-.price .container .allBoxPrice .box .btn:hover {
+.pricing .container .allBoxPrice .box .btn:hover {
   background-color: #44bb6a;
 }
 
